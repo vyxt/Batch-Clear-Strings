@@ -171,7 +171,7 @@ goto Quest3
 :Crash
 sc stop pcasvc >nul
 sc stop dps >nul
-sc stop searchindexer >nul
+taskkill /f /im searchindexer.exe >nul
 sc stop dnscache >nul
 echo.
 call :ColorText 0F "["
